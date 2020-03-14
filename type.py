@@ -5,7 +5,10 @@ class OkexObject:
         'timestamp',
     }
 
-    def __init__(self, timestamp: int):
+    def __init__(
+            self,
+            timestamp: int,
+    ):
         self.timestamp = timestamp
 
 
@@ -18,7 +21,15 @@ class AccountInfo(OkexObject):
         'available',
     }
 
-    def __init__(self, currency: str, balance: str, id: str, hold: str, available: str, timestamp: int):
+    def __init__(
+        self,
+        currency: str,
+        balance: str,
+        id: str,
+        hold: str,
+        available: str,
+        timestamp: int,
+    ):
         self.currency = currency
         self.balance = balance
         self.id = id
